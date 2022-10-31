@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>System Status Monitoring</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <h1>System Status Monitoring</h1>
+      
+      <h3>CPU Usage - Last 5 Minutes</h3>
+      <p>0.61%</p>
+
+      <h3>Memory Usage - Last 5 Minutes</h3>
+      <table class="memory" bordered=1>
+        <thead>
+            <td>Total</td>
+              <td>Used</td>
+              <td>Available</td>
+          </thead>
+          <tr>
+            <td>7Gb</td>
+              <td>69.50%</td>
+              <td>4.03%</td>
+          </tr>
+      </table>
+
+      <h3>Swap Memory - Last 5 Minutes</h3>
+      <table class="swap-memory" bordered=1>
+        <thead>
+            <td>Total</td>
+              <td>Used</td>
+              <td>Available</td>
+          </thead>
+          <tr>
+            <td>2047Mb</td>
+              <td>50.36%</td>
+              <td>49.63%</td>
+          </tr>
+      </table>
+
+      <h3>Disk Usage - Last 5 Minutes</h3>
+      <table class="swap-memory" bordered=1>
+        <thead>
+            <td>Total</td>
+              <td>Used</td>
+              <td>Available</td>
+          </thead>
+          <tr>
+            <td>82Gb</td>
+              <td>19.01%</td>
+              <td>76.18%</td>
+          </tr>
+      </table>
+
+      <h4>Disk Partition Details - Last 5 Minutes</h4>
+      <table class="disk-partitioning" bordered=1>
+        <thead>
+            <td>Disk</td>
+              <td>Used</td>
+              <td>Available</td>
+          </thead>
+          <tr>
+            <td>/dev/sda8</td>
+              <td>20.28%</td>
+              <td>74.58%</td>
+          </tr>
+          <tr>
+            <td>/dev/sda2</td>
+              <td>31.51%</td>
+              <td>68.48%</td>
+          </tr>
+      </table>
+      <p class="deigned-by">Designed by: <u>u2019123</u></p>
+      <style>
+        p.deigned-by{
+          text-align: right;
+        }
+        table, p{
+          margin-left: 20px;
+        }
+        table, table thead, table td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        
+        table thead td {
+          font-weight: bold;
+        }
+
+        .main-body{
+          width: 30%;
+          margin: 0 auto;
+          border: 1px solid;
+          padding: 10px;
+        }
+        
+      </style>
+    </div>
+  </body>
+</html>
